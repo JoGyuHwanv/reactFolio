@@ -13,10 +13,10 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path='/home' Component={Home}/>
-        <Route path='/about' Component={About}/>
-        <Route path='/projects' Component={Projects}/>
-        <Route path='/gitHub' Component={Github}/>
+        <Route path='/reactFolio' Component={Home}/>
+        <Route path='/reactFolio/about' Component={About}/>
+        <Route path='/reactFolio/projects' Component={Projects}/>
+        <Route path='/reactFolio/gitHub' Component={Github}/>
       </Routes>
     </BrowserRouter>
   );
