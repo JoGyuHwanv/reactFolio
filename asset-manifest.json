@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactFolio/static/css/main.729b1ad3.css",
-    "main.js": "/reactFolio/static/js/main.6fd2e253.js",
+    "main.css": "/reactFolio/static/css/main.7d87169a.css",
+    "main.js": "/reactFolio/static/js/main.ca28c993.js",
     "static/js/453.ad6eb26e.chunk.js": "/reactFolio/static/js/453.ad6eb26e.chunk.js",
     "index.html": "/reactFolio/index.html",
-    "main.729b1ad3.css.map": "/reactFolio/static/css/main.729b1ad3.css.map",
-    "main.6fd2e253.js.map": "/reactFolio/static/js/main.6fd2e253.js.map",
+    "main.7d87169a.css.map": "/reactFolio/static/css/main.7d87169a.css.map",
+    "main.ca28c993.js.map": "/reactFolio/static/js/main.ca28c993.js.map",
     "453.ad6eb26e.chunk.js.map": "/reactFolio/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.729b1ad3.css",
-    "static/js/main.6fd2e253.js"
+    "static/css/main.7d87169a.css",
+    "static/js/main.ca28c993.js"
   ]
 }
