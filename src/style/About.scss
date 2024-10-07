@@ -1,0 +1,19 @@
+.skill-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-list { 
+    width: calc(27% - 30px);
+    margin: 0px 15px 30px;
+    padding: 20px 30px;
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    cursor: default;
+    position: relative;
+}
+
+.main section {
+    max-width: 1140px;
+    margin: auto;
+}

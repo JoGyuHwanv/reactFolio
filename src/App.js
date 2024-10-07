@@ -10,13 +10,13 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
-        <Route path='/reactFolio' Component={Home}/>
-        <Route path='/reactFolio/about' Component={About}/>
-        <Route path='/reactFolio/projects' Component={Projects}/>
-        <Route path='/reactFolio/gitHub' Component={Github}/>
+        <Route path='/' Component={Home}/>
+        <Route path='/about' Component={About}/>
+        <Route path='/projects' Component={Projects}/>
+        <Route path='/gitHub' Component={Github}/>
       </Routes>
     </BrowserRouter>
   );

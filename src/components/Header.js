@@ -10,10 +10,10 @@ function Header() {
     return (
         <header> 
             <ul>
-                <li><Link to="/reactFolio">HOME</Link></li>
-                <li><Link to="/reactFolio/about">ABOUT</Link></li>
-                <li><Link to="/reactFolio/projects">PROJECT</Link></li>
-                <li><Link to="/reactFolio/gitHub">GIT</Link></li>
+                <li><Link to="/">HOME</Link></li>
+                <li><Link to="/about">ABOUT</Link></li>
+                <li><Link to="/projects">PROJECT</Link></li>
+                <li><Link to="/gitHub">GIT</Link></li>
             </ul>
         </header>
     )

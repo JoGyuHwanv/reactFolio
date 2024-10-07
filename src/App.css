@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 } */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap");
 
 body {
   background-color: #111;
@@ -43,8 +44,21 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  
 }
 
+.title {
+  position: relative;
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 10px auto;
+}
 /* nav ul {
   list-style-type: none;
   padding: 0;
