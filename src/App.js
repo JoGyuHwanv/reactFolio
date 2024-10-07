@@ -1,23 +1,25 @@
 //import logo from './logo.svg';
 import './App.css';
-import Body from './components/Body';
-import ChangeColor from './components/ChangeColor';
-import Button from './components/Button';
-
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
-    </div>
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path='/about' Component={About}/>
+        <Route path='/projects' Component={Projects}/>
+        <Route path='/contact' Component={Contact}/>
+      </Routes>
+      {/* <Link to="/about">about</Link>
+      <Link to="/projects">projects</Link>
+      <Link to="/contact">contact</Link> */}
+    </BrowserRouter>
 
     // <div className='App'>
     //   <Header/>
