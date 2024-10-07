@@ -2,10 +2,10 @@
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
-import About from './components/About';
-import Projects from './components/Projects';
-import Github from './components/Github';
-import Home from './components/Home';
+import About from './components/pages/About';
+import Projects from './components/pages/Projects';
+import Github from './components/pages/Github';
+import Home from './components/pages/Home';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
