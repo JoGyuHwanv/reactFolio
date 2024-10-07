@@ -6,11 +6,11 @@ function Header() {
     const themeColor = useSelector((state) => state.theme.value);
     
     return (
-        <div>
+        <div style={{color: themeColor}}>
             <h1>banch Company</h1>
-            {/* <p>Name : {user.name}</p>
+            <p>Name : {user.name}</p>
             <p>Age : {user.age}</p>
-            <p>Email : {user.email}</p> */}
+            <p>Email : {user.email}</p>
         </div>
     )
 }
