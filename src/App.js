@@ -4,7 +4,8 @@ import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Github from './components/Github';
+import Home from './components/Home';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -12,24 +13,12 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
+        <Route path='/home' Component={Home}/>
         <Route path='/about' Component={About}/>
         <Route path='/projects' Component={Projects}/>
-        <Route path='/contact' Component={Contact}/>
+        <Route path='/gitHub' Component={Github}/>
       </Routes>
-      {/* <Link to="/about">about</Link>
-      <Link to="/projects">projects</Link>
-      <Link to="/contact">contact</Link> */}
     </BrowserRouter>
-
-    // <div className='App'>
-    //   <Header/>
-    //   <Body/>
-    //   <ChangeColor/>
-    //   <Button size="small" color="blue">Button</Button>
-    //   <Button size="small" color="red">Button</Button>
-    //   <Button size="small" color="black">Button</Button>
-    //   <Button outline>Button</Button>
-    // </div>
   );
 }
 //coding music gnidoc Developer repoleved programmer
