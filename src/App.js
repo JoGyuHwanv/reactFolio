@@ -6,7 +6,7 @@ import About from './components/pages/About';
 import Projects from './components/pages/Projects';
 import Github from './components/pages/Github';
 import Home from './components/pages/Home';
-import Heading from '../src/components/Heading';
+import Heading from './components/PageHeader';
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 

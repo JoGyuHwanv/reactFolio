@@ -25,7 +25,7 @@ function Heading(props) {
     }
 }
 
-const StyleHeading = styled.main`
+const StyleHeading = styled.div`
 .title {
     position: relative;
     padding: 80px 0px;

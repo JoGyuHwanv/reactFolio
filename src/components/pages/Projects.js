@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../../assets/data/projectdata';
-import Heading from '../Heading';
+import Heading from '../PageHeader';
 
 function Projects() {
     const projectData = data.projectList.map((list, idx) => (
