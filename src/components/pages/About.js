@@ -12,7 +12,10 @@ function About() {
                 <i>{list.label}</i>
             </h5>
             <ul className='skill-detail'>
-                <li key={idx}>{list.detail}</li>
+                {list.detail.map((detail, idx) => (
+                    <li key={idx}>{detail}</li>
+                ))}
+                {/* <li key={idx}>{list.detail}</li> */}
                 {/* {list.detail.map((detail, idx) => (
                     <li key={idx}>{detail}</li>
                 ))} */}

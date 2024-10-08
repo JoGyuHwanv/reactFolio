@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import img from "../assets/image/codingImg.avif"
 
 //import "../style/Header.scss";
 
@@ -21,7 +22,12 @@ function Header() {
     )
 }
 const StyleHeader = styled.header`
-    background-color: #111;
+    //background-color: #111;
+    //background-image: url("../assets/image/codingImg.avif");
+    //background-image: url(${img});
+    //background-size: 100%;
+
+    //center no-repeat;
     //padding: 20px;
     //text-align: center;
     position: fixed;
