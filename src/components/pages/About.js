@@ -57,6 +57,7 @@ const StyleSkill = styled.main`
 
                     .skill-label {
                         margin-bottom: 10px;
+                        margin-top: 10px;
                         i {
                             // color: ${(props) => props.theme.mainColor};
                             padding-right: 10px;
@@ -86,15 +87,15 @@ const StyleSkill = styled.main`
             }
         }
     }
-    //@media ${(props) => props.theme.mobile} {
-    //     section {
-    //         padding-bottom: 40px;
-    //         &:not(:last-child) {
-    //             &::after {
-    //                 width: 70%;
-    //             }
-    //         }
-    //     }
-    // }
+    @media ${(props) => props.theme.mobile} {
+        section {
+            padding-bottom: 40px;
+            &:not(:last-child) {
+                &::after {
+                    width: 70%;
+                }
+            }
+        }
+    }
 `;
 export default About;
