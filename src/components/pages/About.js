@@ -87,15 +87,21 @@ const StyleSkill = styled.main`
             }
         }
     }
-    @media ${(props) => props.theme.mobile} {
-        section {
-            padding-bottom: 40px;
-            &:not(:last-child) {
-                &::after {
-                    width: 70%;
-                }
-            }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: pink;
         }
     }
+    // @media ${(props) => props.theme.mobile} {
+    //     section {
+    //         padding-bottom: 40px;
+    //         &:not(:last-child) {
+    //             &::after {
+    //                 width: 70%;
+    //             }
+    //         }
+    //     }
+    // }
 `;
 export default About;
