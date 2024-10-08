@@ -16,7 +16,7 @@ function Header() {
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/about">ABOUT</Link></li>
                 <li><Link to="/projects">PROJECT</Link></li>
-                <li><Link to="/gitHub">GIT</Link></li>
+                <li><Link to="https://github.com/JoGyuHwanv" target="_blank">GIT</Link></li>
             </ul>
         </StyleHeader>
     )
@@ -51,8 +51,7 @@ const StyleHeader = styled.header`
             list-style-type: none;
         }
     }
-
-    
 `;
+
 //style={{color: themeColor}}
 export default Header

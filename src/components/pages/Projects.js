@@ -1,23 +1,31 @@
 import React from 'react';
+import data from '../../assets/data/projectdata';
+import Heading from '../Heading';
 
-const Projects = () => {
-    const projects = [
-        { name: '프로젝트 1', description: '설명 1'},
-        { name: '프로젝트 2', description: '설명 2'}
-    ];
+function Projects() {
+    const projectData = data.projectList.map((list, idx) => (
+        <div className='project-list' key={idx}>
+            <h5 className='project-label'>
+                <i>{list.name}</i>
+            </h5>
+            <ul>
+                <li>{list.period}</li>
+            </ul>
+            <ul>
+                <li>{list.stack}</li>
+            </ul>
+        </div>
+    ));
 
     return (
-        <section id='projects'>
-            <h2>프로젝트</h2>
-            <ul>
-                {projects.map((projects, index) => (
-                    <li key={index}>
-                        <h3>{projects.name}</h3>
-                        <p>{projects.description}</p>
-                    </li>
-                ))}
-            </ul>
-        </section>
+        <>
+            <Heading level='2'></Heading>
+            <section>
+                <div className='project'>
+                    {projectData}
+                </div>
+            </section>
+        </>
     )
 }
 export default Projects;
