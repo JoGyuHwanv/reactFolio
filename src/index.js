@@ -13,13 +13,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/Store';
+import { ThemeProvider } from "styled-components";
+import config from "../src/assets/config"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    {/* <ThemeProvider theme={config}> */}
+      <Provider store={store}>
+        <App />
+      </Provider>
+    {/* </ThemeProvider> */}
   </React.StrictMode>
 );
 

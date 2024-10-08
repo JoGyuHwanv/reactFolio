@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import data from '../../assets/data/skill';
 import Heading from '../PageHeader';
+//import config from "../../assets/config";
 
 function About() {
     const skillList = data.skillList.map((list, idx) => (
@@ -21,7 +22,6 @@ function About() {
             </ul>
         </div>
     ));
-    
     return (
         <>
             <StyleSkill>
@@ -85,23 +85,13 @@ const StyleSkill = styled.main`
                     }
                 }
             }
-        }
+        }   
     }
-
     @media only screen and (max-width: 600px) {
-        body {
-            background-color: pink;
+        section {
+            background-color: lightblue;
         }
     }
-    // @media ${(props) => props.theme.mobile} {
-    //     section {
-    //         padding-bottom: 40px;
-    //         &:not(:last-child) {
-    //             &::after {
-    //                 width: 70%;
-    //             }
-    //         }
-    //     }
-    // }
+    
 `;
 export default About;
