@@ -1,9 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-//import '../style/About.scss';
+import data from '../../assets/data/skill';
 
 
-const About = () => {
+
+function About() {
+    const skillList = data.skillList.map((list, idx) => (
+        <div className='skill-list' key={idx}>
+            <h5 className="skill-label">
+                {/* <i className={list.icon}></i>: {list.label} */}
+                <i>{list.label}</i>
+            </h5>
+            <ul className='skill-detail'>
+                <li key={idx}>{list.detail}</li>
+                {/* {list.detail.map((detail, idx) => (
+                    <li key={idx}>{detail}</li>
+                ))} */}
+            </ul>
+        </div>
+    ));
+    
     return (
         <StyleAbout>
             <div className='title'>
@@ -11,61 +27,10 @@ const About = () => {
             </div>
             <section>
                 <div className='skill-main'>
-                    <div className='skill-list'>
-                        <h3>HTML/CSS</h3>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </div>
-                    <div className='skill-list'>
-                        <h3>HTML/CSS</h3>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </div>
-                    <div className='skill-list'>
-                        <h3>HTML/CSS</h3>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </div>
-                    <div className='skill-list'>
-                        <h3>HTML/CSS</h3>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </div>
-                    <div className='skill-list'>
-                        <h3>HTML/CSS</h3>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </div>
-                    <div className='skill-list'>
-                        <h3>HTML/CSS</h3>
-                        <ul>
-                            <li>test</li>
-                            <li>test</li>
-                            <li>test</li>
-                        </ul>
-                    </div>
+                    {skillList}
                 </div>
             </section>
         </StyleAbout>
-        // <section id="about">
-        //     <h2>소개</h2>
-        //     <p> 내용 </p>
-        // </section>
     )
 }
 
@@ -80,13 +45,41 @@ section {
         flex-wrap: wrap;
     
         .skill-list {
-            width: calc(33% - 30px);
+            width: calc(27% - 22px);
             margin: 0px 15px 30px;
             padding: 20px 30px;
             border: 2px solid rgb(37, 37, 37);
             border-radius: 10px;
             cursor: default;
             position: relative;
+
+            .skill-label {
+                margin-bottom: 10px;
+                i {
+                    // color: ${(props) => props.theme.mainColor};
+                    padding-right: 10px;
+                    font-size: 20px;
+                    vertical-align: text-top;
+                }
+            }
+            .skill-detail {
+                li {
+                    position: relative;
+                    padding: 0 0 10px 30px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: rgb(255 255 255 / 80%);
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 13px;
+                        width: 20px;
+                        height: 1px;
+                        background: ${(props) => props.theme.mainColor};
+                    }
+                }
+            }
         }
     }
 
