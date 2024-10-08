@@ -87,11 +87,11 @@ const StyleSkill = styled.main`
             }
         }   
     }
-    @media only screen and (max-width: 600px) {
-        section {
-            background-color: lightblue;
-        }
-    }
+    // @media only screen and (max-width: 600px) {
+    //     section {
+    //         background-color: lightblue;
+    //     }
+    // }
     
 `;
 export default About;
