@@ -6,6 +6,14 @@ function Heading(props) {
     console.log(props);
     
     switch(props.level) {
+        case '0': 
+        return (
+            <StyleHeading>
+                <div className='title'>
+                    <h1>ABOUT <span>Me</span></h1>
+                </div>
+            </StyleHeading> 
+        )
         case '1': 
         return (
             <StyleHeading>
