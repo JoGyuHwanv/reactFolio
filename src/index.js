@@ -20,11 +20,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/* <ThemeProvider theme={config}> */}
+    <ThemeProvider theme={config}>
       <Provider store={store}>
         <App />
       </Provider>
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
   </React.StrictMode>
 );
 
