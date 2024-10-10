@@ -58,16 +58,21 @@ const StyledSkillsWrap = styled.div`
     flex-wrap: wrap;
 
     .skill-list {
-        width: calc(27% - 22px);
+        width: calc(28% - 14px);
         margin: 0px 15px 30px;
-        padding: 20px 30px;
+        padding: 10px 20px;
         border: 2px solid rgb(37, 37, 37);
         border-radius: 10px;
         cursor: default;
         
+        &:hover {
+            border-color: ${(props) => props.theme.mainColor};
+            transition: 1s
+        }
+
         .skill-label {
             margin-bottom: 10px;
-            margin-top: 10px;
+            margin-top: 5px;
             i {
                 // color: ${(props) => props.theme.mainColor};
                 padding-right: 10px;
@@ -98,9 +103,15 @@ const StyledSkillsWrap = styled.div`
         width: 85%;
 		margin: auto;
 		.skill-list {
-			width: calc(40% - 30px);
-            position: relative;
+			width: calc(44% - 22px);
 		}
+    }
+    @media ${props => props.theme.tablet} {
+        width: 85%;
+            .skill-list {
+                width: calc(100% - 21px);
+            }
+        }
     }
     @media ${props => props.theme.mobile} {
         width: 90%;
@@ -110,8 +121,26 @@ const StyledSkillsWrap = styled.div`
             }
         }
     }
+    
     .skill-list {
         position: relative;
+        &:hover {
+            &::before,
+			&::after {
+				width: 100%;
+				height: 100%;
+			}
+            &::before {
+				border-top-color: ${(props) => props.theme.mainColor};
+				border-right-color: ${(props) => props.theme.mainColor};
+				transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+			}
+			&::after {
+				border-bottom-color: ${(props) => props.theme.mainColor};
+				border-left-color: ${(props) => props.theme.mainColor};
+				transition: border-color 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.45s;
+			}
+        }
     }
 `;
 export default About;
