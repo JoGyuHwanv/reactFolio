@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/reactFolio/static/css/main.3a7e5dc1.css",
-    "main.js": "/reactFolio/static/js/main.8282ec4c.js",
+    "main.css": "/reactFolio/static/css/main.2a9c958a.css",
+    "main.js": "/reactFolio/static/js/main.8130a42a.js",
     "static/js/453.ad6eb26e.chunk.js": "/reactFolio/static/js/453.ad6eb26e.chunk.js",
     "static/media/Rix X ladywatermelon OTF Regular.otf": "/reactFolio/static/media/Rix X ladywatermelon OTF Regular.46ebab80f8189c64b717.otf",
     "static/media/codingImg2.webp": "/reactFolio/static/media/codingImg2.94f7ca9ac5baa12b6157.webp",
     "index.html": "/reactFolio/index.html",
-    "main.3a7e5dc1.css.map": "/reactFolio/static/css/main.3a7e5dc1.css.map",
-    "main.8282ec4c.js.map": "/reactFolio/static/js/main.8282ec4c.js.map",
+    "main.2a9c958a.css.map": "/reactFolio/static/css/main.2a9c958a.css.map",
+    "main.8130a42a.js.map": "/reactFolio/static/js/main.8130a42a.js.map",
     "453.ad6eb26e.chunk.js.map": "/reactFolio/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a7e5dc1.css",
-    "static/js/main.8282ec4c.js"
+    "static/css/main.2a9c958a.css",
+    "static/js/main.8130a42a.js"
   ]
 }
