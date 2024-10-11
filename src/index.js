@@ -1,11 +1,3 @@
-// import React from "react";
-// import ReactDOM from 'react-dom/client';
-
-// const myFirstElement = <h1>Hello React!</h1>
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(myFirstElement);
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -22,7 +14,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={config}>
       <Provider store={store}>
-        <App />
+        <App /> 
       </Provider>
     </ThemeProvider>
   </React.StrictMode>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import data from '../../assets/data/skill';
 import Heading from '../PageHeader';
-//import config from "../../assets/config";
+import Wrapper from '../Wrapper';
 
 function About() {
     const skillList = data.skillList.map((list, idx) => (
@@ -23,14 +23,14 @@ function About() {
         </div>
     ));
     return (
-        <>
+        <Wrapper>
             <StyleSkill>
                 <Heading level='1'></Heading>
                 <section>
                     <StyledSkillsWrap>{skillList}</StyledSkillsWrap>
                 </section>
             </StyleSkill>
-        </>
+        </Wrapper>
     )
 }
 
