@@ -46,9 +46,9 @@ const HomeStyle = styled.main`
     display: flex; //Flex는 컨테이너에 display: flex;를 적용하는게 시작
     color: #fff;
     .left {
-        flex: 0 0 35%;
+        flex: 0 0 40%;
         position: relative;
-		max-width: 800px;
+		max-width: 600px;
 
         .img-box {
             background-image: url(${(props) => props.theme.mainImg});
@@ -61,7 +61,7 @@ const HomeStyle = styled.main`
 			position: relative;
 			z-index: 1;
             height: 90vh;
-            margin: 5vh 0px 0px 30px;
+            margin: 5vh 0px 0px 80px;
         } 
     }
     .right {
@@ -114,10 +114,29 @@ const HomeStyle = styled.main`
             }
         }
     }
+    @media ${props => props.theme.tablet} {
+        display: block;
+        .left {
+            max-width: 768px;
+            .img-box {
+                height: 50vh;
+                margin: 5vh 80px 0 80px
+            }
+        }
+        .right {
+            flex-direction: row; //direction - 배치방향설정 (row, row-reverse)
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 12% 0 15%;
+            
+            section {
+                
+            }
+        }
+    }
     @media ${props => props.theme.mobile} {
         display: block;
         .left {
-            
             .img-box {
                 height: 50vh;
                 margin: 3vh 30px 0 30px
