@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/reactFolio/static/css/main.84318944.css",
-    "main.js": "/reactFolio/static/js/main.74938fd3.js",
+    "main.js": "/reactFolio/static/js/main.5abc63ac.js",
     "static/js/453.ad6eb26e.chunk.js": "/reactFolio/static/js/453.ad6eb26e.chunk.js",
     "static/media/Rix X ladywatermelon OTF Regular.otf": "/reactFolio/static/media/Rix X ladywatermelon OTF Regular.46ebab80f8189c64b717.otf",
     "static/media/codingImg2.webp": "/reactFolio/static/media/codingImg2.94f7ca9ac5baa12b6157.webp",
     "index.html": "/reactFolio/index.html",
     "main.84318944.css.map": "/reactFolio/static/css/main.84318944.css.map",
-    "main.74938fd3.js.map": "/reactFolio/static/js/main.74938fd3.js.map",
+    "main.5abc63ac.js.map": "/reactFolio/static/js/main.5abc63ac.js.map",
     "453.ad6eb26e.chunk.js.map": "/reactFolio/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84318944.css",
-    "static/js/main.74938fd3.js"
+    "static/js/main.5abc63ac.js"
   ]
 }
