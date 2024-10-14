@@ -40,7 +40,7 @@ const StyleHeading = styled.div`
     text-align: center;
     
     h1{
-        font-size: 56px;
+        font-size: 50px;
         font-weight: 900;
         text-transform: uppercase;
         margin: 10px auto;

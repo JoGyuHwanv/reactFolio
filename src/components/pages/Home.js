@@ -15,13 +15,17 @@ function Home() {
                 
                 <div className='right'>
                     <section>
-                        <h2>I'M ghuHwan Jo</h2>
+                        <h2>I'M
+                            <span className='message'>
+                                <strong>GHUHWAN JO</strong>
+                            </span>
+                        </h2>
                         <p>소개글 들어갈 곳 
                             소개글 들어갈 곳 
                             <br />
                             소개글 들어갈 곳 
                             소개글 들어갈 곳 
-                            소개글 들어갈 곳</p>
+                            소개글 들어갈 곳</p><br />
                         <h4>INFO</h4>
                         <ul>
                             <li><span>Name : </span>조규환</li>
@@ -30,8 +34,8 @@ function Home() {
                             <li><span>Address : </span>청주시 흥덕구</li>
                             <li><span>Email : </span>zgh0608@naver.com</li>
                         </ul>
-                        </section>
-                    <Link to="/about" className=''>MORE ABOUT ME</Link>
+                        <Link to="/about" className=''>MORE ABOUT ME</Link>
+                    </section>
                 </div>
             </HomeStyle>
         </Wrapper>
@@ -42,7 +46,7 @@ const HomeStyle = styled.main`
     display: flex; //Flex는 컨테이너에 display: flex;를 적용하는게 시작
     color: #fff;
     .left {
-        flex: 0 0 50%;
+        flex: 0 0 35%;
         position: relative;
 		max-width: 800px;
 
@@ -52,34 +56,81 @@ const HomeStyle = styled.main`
 			background-repeat: no-repeat;
 			background-position: top;
             position: relative;
-            height: 80vh;
             border-radius: 15px;
 			box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
 			position: relative;
 			z-index: 1;
-            margin: 10vh 0 0 250px;
+            height: 90vh;
+            margin: 5vh 0px 0px 30px;
         } 
     }
     .right {
         display: flex;
-		flex-direction: column; //direction - 배치방향설정 (row, row-reverse)
-		justify-content: center;
-		align-items: flex-start;
-		padding: 0 10% 0 7%;
-        h2 {
-            font-size: 40px;
-            padding: 0px 0px 20px 0px;
-            margin: 0px 0px 30px 0px;
-        }
-        h4 {
+        flex-direction: column; //direction - 배치방향설정 (row, row-reverse)
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px 10% 0px 7%;
+        
+        section {
+            
+            h2 {
+                font-size: 40px;
+                padding: 0px 0px 20px 0px;
+                margin: 0px 0px 30px 0px;
+            }
+            .message {
+                font-size: 40px;
+                display: block;
+                overflow: hidden;
+                top: 0px;
+                left: 80px;
+            }
+        
+            h4 {
             font-size: 30px;
             margin: 15px 0px 15px 0px;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 50%;
+                    padding-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    //color: rgb(255, 180, 0);
+                }
+            }
         }
-        ul {
-
-            li{
-                font-size: 18px;
-                padding: 10px 0px 10px 0px;
+    }
+    @media ${props => props.theme.laptop} {
+        .right {
+            section {
+                ul {
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media ${props => props.theme.mobile} {
+        display: block;
+        .left {
+            
+            .img-box {
+                height: 50vh;
+                margin: 3vh 30px 0 30px
+            }
+        }
+        .right {
+            flex-direction: row; //direction - 배치방향설정 (row, row-reverse)
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 12% 0 15%;
+            
+            section {
+                
             }
         }
     }
