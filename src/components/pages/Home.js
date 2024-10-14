@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import About from './About';
 import { Link } from "react-router-dom";
-import test from "../../assets/image/codingImg2.webp"
 import Wrapper from '../Wrapper';
 
 function Home() {
