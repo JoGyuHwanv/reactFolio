@@ -74,7 +74,7 @@ const StyledSkillsWrap = styled.div`
             margin-bottom: 10px;
             margin-top: 5px;
             i {
-                // color: ${(props) => props.theme.mainColor};
+                color: ${(props) => props.theme.mainColor};
                 padding-right: 10px;
                 font-size: 20px;
                 vertical-align: text-top;
