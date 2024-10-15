@@ -51,7 +51,7 @@ const ProjectStyle = styled.div`
     @media ${props => props.theme.mobile} {
         width: 80%;
         padding-bottom: 60px;
-   
+    }
 `;
 
 const StyledSkillsWrap = styled.div`
