@@ -2,32 +2,32 @@ const skillData = {
     skillList: [
         {
             label: "Java",
-            detail: [""],
+            detail: ["내용", "내용", "내용"],
             icon: "A"
         },
         {
             label: "jQuery",
-            detail: [""],
+            detail: ["내용", "내용", "내용"],
             icon: "B"
         },
         {
             label: "Javascript",
-            detail: [""],
+            detail: ["내용", "내용", "내용"],
             icon: "C"
         },
         {
             label: "SQL",
-            detail: [""],
+            detail: ["내용", "내용", "내용"],
             icon: "D"
         },
         {
             label: "Git/Github",
-            detail: [""],
+            detail: ["내용", "내용", "내용"],
             icon: "E"
         },
         {
             label: "React",
-            detail: [""],
+            detail: ["내용", "내용", "내용"],
             icon: "F"
         }
     ],
