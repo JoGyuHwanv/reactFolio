@@ -3,13 +3,21 @@ import styled from 'styled-components';
 import data from '../../assets/data/skill';
 import Heading from '../PageHeader';
 import Wrapper from '../Wrapper';
+import { FaJava } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io";
+import { TbFileTypeSql } from "react-icons/tb";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 
 function About() {
+    const icons = [<FaJava />, <IoLogoJavascript/>, <TbFileTypeSql/>, <FaGithubSquare/>, <FaReact/>];
+    
     const skillList = data.skillList.map((list, idx) => (
         <div className='skill-list' key={idx}>
             <h5 className="skill-label">
                 {/* <i className={list.icon}></i>: {list.label} */}
-                <i>{list.label}</i>
+                <i>{icons[idx]}</i>
+                - {list.label}
             </h5>
             <ul className='skill-detail'>
                 {list.detail.map((detail, idx) => (
@@ -73,10 +81,11 @@ const StyledSkillsWrap = styled.div`
         .skill-label {
             margin-bottom: 10px;
             margin-top: 5px;
+            font-size: 20px;
             i {
                 color: ${(props) => props.theme.mainColor};
                 padding-right: 10px;
-                font-size: 20px;
+                font-size: 30px;
                 vertical-align: text-top;
             }
         }

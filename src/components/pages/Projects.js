@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../assets/data/projectdata';
+import data from '../../assets/data/ProjectData';
 import Heading from '../PageHeader';
 import styled from 'styled-components';
 import Wrapper from '../Wrapper';
@@ -10,7 +10,7 @@ function Projects() {
         <div className='project-list' key={idx}>
             <div className='info-wrap'>
                 <div className='txt-wrap'>
-                    <div className='project-name'>{list.name}</div>
+                   <div className='project-name'>{list.name}</div>
                     <span className='project-period'>{list.period}</span>
                     <p><span className='label'>Content</span>
                         {list.description}
