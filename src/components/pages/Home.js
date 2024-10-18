@@ -28,7 +28,7 @@ function Home() {
                             <li><span>Address : </span>청주시 흥덕구</li>
                             <li><span>Email : </span>zgh0608@naver.com</li>
                         </ul>
-                        <Link to="/about" className=''>MORE ABOUT ME</Link>
+                        {/* <Link to="/about" className=''>MORE ABOUT ME</Link> */}
                     </section>
                 </div>
             </HomeStyle>

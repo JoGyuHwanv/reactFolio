@@ -8,9 +8,11 @@ import { IoLogoJavascript } from "react-icons/io";
 import { TbFileTypeSql } from "react-icons/tb";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { BsDatabaseFillDown } from "react-icons/bs";
 
 function About() {
-    const icons = [<FaJava />, <IoLogoJavascript/>, <TbFileTypeSql/>, <FaGithubSquare/>, <FaReact/>];
+    const icons = [<FaJava />, <IoLogoJavascript/>, <TbFileTypeSql/>, <FaGithubSquare/>, <BsDatabaseFillDown/>, <FaReact/>, <FaHtml5/>];
     
     const skillList = data.skillList.map((list, idx) => (
         <div className='skill-list' key={idx}>
