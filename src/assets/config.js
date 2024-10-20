@@ -1,4 +1,5 @@
 import mainImg from "../assets/image/codingImg2.webp";
+import meImg from "../assets/image/me.jpeg";
 
 const size = {
 	mobile: "720px",
@@ -14,6 +15,7 @@ const config = {
 	laptop: `(max-width: ${size.laptop})`,
 
 	mainImg: mainImg,
+	meIng: meImg
 };
 
 export default config;

@@ -45,7 +45,7 @@ const HomeStyle = styled.main`
 		max-width: 600px;
 
         .img-box {
-            background-image: url(${(props) => props.theme.mainImg});
+            background-image: url(${(props) => props.theme.meIng});
             background-size: cover;
 			background-repeat: no-repeat;
 			background-position: top;
