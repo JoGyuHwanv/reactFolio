@@ -11,6 +11,10 @@ const skillData = {
             // detail: ["이벤트 생성 / ES6"],
         },
         {
+            label: "Svelte",
+            detail: [""],
+        },
+        {
             label: "SQL",
             detail: [""],
             // detail: ["쿼리문으로 데이터베이스와 소통"],
@@ -21,18 +25,9 @@ const skillData = {
             // detail: ["팀원들과의 협업"],
         },
         {
-            label: "Oracle/Mysql/Dbeaver",
+            label: "OracleDB/Mysql/MariaDB",
             detail: [""],
             // detail: ["공공프로젝트를 진행하면서 여러 RDBMS를 경험해봤습니다."],
-        },
-        {
-            label: "React",
-            detail: [""],
-        },
-        {
-            label: "HTML",
-            detail: [""],
-            // detail: ["간단한 UI를 생성할 수 있습니다."],
         },
     ],
     // experienceList: [
