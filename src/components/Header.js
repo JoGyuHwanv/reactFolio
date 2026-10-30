@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { IoHomeOutline } from "react-icons/io5";
-import { VscAccount } from "react-icons/vsc";
 import { TfiLayersAlt } from "react-icons/tfi";
 import { FaGithub } from "react-icons/fa";
 //import "../style/Header.scss";
@@ -16,7 +15,6 @@ function Header() {
         <StyleHeader> 
             <ul>
                 <li><Link to="/"><IoHomeOutline size='30' color="#fff"/></Link></li>
-                <li><Link to="/about"><VscAccount size='30' color="#fff"/></Link></li>
                 <li><Link to="/projects"><TfiLayersAlt size='30' color="#fff"/></Link></li>
                 <li><Link to="https://github.com/JoGyuHwanv" target="_blank"><span>GIT</span><FaGithub size='30' color="#fff"/></Link></li>
             </ul>

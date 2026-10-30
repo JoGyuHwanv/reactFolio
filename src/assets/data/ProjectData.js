@@ -23,6 +23,12 @@ const projectData = {
             period: "2024.10.14 - 2024.11.15",
             description: "한국철도공사의 경영정보시스템(MIS) 기능 추가 작업을 하였습니다. 약 한달정도 소요되었고 5개의 기능을 추가하였습니다.",
             stack: ["Java", "Html", "Jquery", "MariaDB"]
+        },
+        {
+            name: "그린대로 운영사업",
+            period: "2025.04 - 현재",
+            description: "그린대로 홈페이지 운영 및 유지보수 프로젝트입니다. 2025년 4월부터 참여하여 페이지 개편과 운영 중 발생하는 오류 수정을 담당하고 있습니다. 서비스의 안정적인 운영과 사용자 편의성 향상을 위한 개선 작업을 진행하고 있습니다.",
+            stack: ["Java", "JavaScript", "HTML", "PostgreSQL", "Database"]
         }
     ]
 }
